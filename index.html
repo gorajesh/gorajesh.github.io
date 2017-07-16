@@ -11,6 +11,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  </head>
  <style>
+ .bg-grey {
+      background-color: #f6f6f6;}
 
 .navbar-default .navbar-toggle {
       border-color: transparent;
@@ -108,7 +110,7 @@
 }
 .img-responsive{
 	width:100%;
-	opacity:0.72;
+		opacity: .6; 
 
 
 }
@@ -138,8 +140,381 @@
 	margin-right:60px;
 }
 
+
+.logo-small {
+      color:#00aaff;
+      font-size: 50px;
+  }
+  .logo {
+      color: #00aaff;
+      font-size: 200px;
+  }
+  
+
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+ .panel {
+      border: 1px solid #85adad; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #85adad !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  hr {
+    border-color: #F05F40;
+    border-width: 3px;
+    max-width: 50px;
+}
+
  </style>
- <script>
+
+
+<!--code for highlight in navbar-->
+ <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+ 	<!--code for navigation bar-->
+ 	<nav class="navbar navbar-default navbar-fixed-top" >
+  			<div class="container" >
+    			<div class="navbar-header">
+     				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>                        
+					       <span class="icon-bar"></span>                        
+      				</button>
+      					<a class="navbar-brand" href="#myPage">Logo</a>
+    			</div>
+					    <div class="collapse navbar-collapse" id="myNavbar">
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a href="#n" class="active">Home</a></li>
+					        <li><a href="#services">Services</a></li>
+					        <li><a href="#materials">Materials</a></li>
+					        <li><a href="#about">About</a></li>
+					        <li><a href="#contact">Contact</a></li>
+					      </ul>
+					    </div>
+			</div>
+  	</nav>
+  <!--end of code for navbar-->
+  		<hr id=n>
+     <!--code for mslider-->
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+ 
+	    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol>
+
+	    <!-- Wrapper for slides -->
+	    	<div class="carousel-inner" role="listbox" >
+
+				      <div class="item active" >
+				          <img src="D:\rajarameshsir\images\9.jpg" class="img-responsive center-block" alt="">
+				          	<div class="container">
+						            <div class="carousel-caption" id="c0">
+						              <h2>Learners Hub</h2>
+						              <p>Welcome to the learners hub family</p>
+						              <a class="btn btn-large btn-primary" href="#materials" id=b1>Start Learning</a>
+						            </div>
+				          	</div>
+				        </div>
+				    
+				      	<div class="item">
+					      	<img class="img-responsive center-block" src="D:\rajarameshsir\images\11.jpg">
+					      		<div class="container" >
+						            <div class="carousel-caption" id="c1">
+						              <h2>Get Set Aptitude</h2>
+						              <hp>Prepare Aptitude of different languages</p>
+						              <a class="btn btn-large btn-primary" href="#materials" id=b1>Start Learning</a>
+						            </div>
+					          	</div>
+					     </div>
+		     
+					      <div class="item">
+					      		<img class="img-responsive center-block" src="D:\rajarameshsir\images\7.jpg">
+						        <div class="container">
+							            <div class="carousel-caption" id="c2">
+							              <h2>Crack Gate-2018</h2>
+							              <p>Prepare yourself for the big Gate-2018</p>
+							              <a class="btn btn-large btn-primary" href="#materials" id=b1>Start Learning</a>
+							            </div>
+						          </div>
+						        
+					      </div>
+					    
+	    	</div>
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					      <span class="sr-only">Previous</span>
+					    </a>
+					    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					      <span class="sr-only">Next</span>
+					    </a>
+	 </div>
+
+<div class=bg-grey>
+</div>
+<br>
+
+<!--end of slider-->
+  
+<hr id="services">
+  <!--code for services-->
+  <div  class="container-fluid text-center slideanim">
+  		<h2>SERVICES</h2>
+  			<h4>What we offer</h4>
+		  <br>
+		  <br>
+		  <div class="row ">
+			    <div class="col-sm-4">
+			      <span class="glyphicon glyphicon-file logo-small"></span><hr>
+			      <h4>Gate Preparation</h4>
+			      <p>Get all the Previous year Gate papers</p>
+			    </div>
+			    <div class="col-sm-4">
+			      <span class="glyphicon glyphicon-list-alt logo-small"></span><hr>
+			      <h4>Aptitude</h4>
+			      <p>Prepare for Aptitude rounds.</p>
+			    </div>
+			    <div class="col-sm-4">
+			      <span class="glyphicon glyphicon-headphones logo-small"></span><hr>
+			      <h4>Videos</h4>
+			      <p>Videos content on topics</p>
+			    </div>
+  		</div>
+		<br>
+     	<br>
+     	<br>
+	<center><div class="container" >
+    	  <span class="glyphicon glyphicon-leaf logo-small"></span><hr>
+     	 <h4>Online Tests</h4>
+      		<p>Improve your scores through Test's</p>
+    	</div></center>
+    </div>
+
+	<br>
+<br>
+<br>
+
+<hr>
+<br>
+			<div class="container bg-grey slideanim" style="margin-right:190px" >
+						  <div class="row" >
+							    <div class="col-sm-4">
+							      <span class="glyphicon glyphicon-check logo" style="color: #8585ad"></span>
+							    </div>
+									    <div class="col-sm-8">
+									      <h2>Our Vision</h2><br>
+									      <h4> Our mission is to provide the best content for engineering student in fields of gate,aptitude and technical knowledge in different languages.</h4><br>
+									      </div>
+							</div></div>
+						  		<br>
+						  		<br>
+						  		<br>
+			<div class="container bg-grey slideanim" style="float:right">
+						  		
+								<div class="row">
+							       <div class="col-sm-8" >
+							    	<br>
+								      <h2>Our Mission</h2><br>
+								      <h4>Our mission is to provide the best content for engineering student in fields of gate,aptitude and technical knowledge in different languages.</h4><br>
+							      	</div>
+							      	<br>
+								     <div class="col-sm-4" style="float:right">
+								      <span class="glyphicon glyphicon-send logo " style="color: #8585ad"></span>
+							    	</div>
+							  
+								</div>
+
+			</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr id="materials">
+<br>
+ <!-- Container (Pricing Section) -->
+<div  class="container-fluid">
+  <div class="text-center">
+    <h2>Materials</h2>
+    <h4> let's start  learning</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Gate Materials</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>2014</strong> </p>
+          <p><strong>2015</strong> </p>
+          <p><strong>2016</strong></p>
+          <p><strong>2017</strong> </p>
+          <p><strong>Previous year</strong> Papers</p>
+        </div>
+        <div class="panel-footer">
+          
+          <button class="btn btn-lg">Explore</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Aptitude</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>C-Aptitude</strong></p>
+          <p><strong>C++-Aptitude</strong></p>
+          <p><strong>Java-Aptitude</strong> </p>
+        
+          <p><strong>Improve your Technical</strong> Knowledge</p>
+        </div>
+        <div class="panel-footer">
+          
+          <button class="btn btn-lg">Explore</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Quiz</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>C Quiz</strong> </p>
+          <p><strong>Java Quiz</strong></p>
+          <p><strong>C++ Quiz</strong> </p>
+          <p><strong>Check Your</strong> Score</p>
+        </div>
+        <div class="panel-footer">
+         
+          <button class="btn btn-lg">Explore</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr id=about>
+<center><h2>About me</h2></center><hr>
+<br>
+
+<div class="container text-center slideanim" style="margin-left:160px"  id=ab>
+						  <div class="row" >
+							    <div class="col-sm-4">
+							      <span class="glyphicon glyphicon-user logo" style="color: #999966"></span>
+							    </div>
+									    <div class="col-sm-8">
+									      <h2>Ch.Raja Ramesh</h2><br><hr>
+									      <h4>Proffesor</h4><br>
+									      <h4>Cse-Dept</h4><br>
+									      <h4>Sri Vasavi Engineering College</h4><br>
+									      
+									      
+									      </div>
+							</div></div>
+<br>
+<br>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      
+      <p><span class="glyphicon glyphicon-phone"></span> 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 ">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<hr>
+
+<footer class="container-fluid text-center" style="background-color:#66ccff">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p> Made By Me@rajee</p>
+</footer>
+
+
+<script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -155,7 +530,7 @@ $(document).ready(function(){
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 900, function(){
+      }, 400, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
@@ -163,123 +538,17 @@ $(document).ready(function(){
     } // End if
   });
   
-  $(document).ready(function () {
-        $('#c0').hide().fadeIn(5000);
-        $('#c1').hide().fadeIn(14000);
-     $('#c2').hide().fadeIn(23000);
-    
-    });
-
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-        if (pos < winTop + 120) {
+        if (pos < winTop + 150) {
           $(this).addClass("slide");
         }
     });
   });
 })
 </script>
-
- <body>
- 	<!--code for navigation bar-->
- 	<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="active">Home</a></li>
-        <li><a href="#services">Materials</a></li>
-        <li><a href="#portfolio">Videos</a></li>
-        <li><a href="#pricing">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  </nav>
-  <!--end of code for navbar-->
-  
-     <!--code for mslider-->
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
- 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active" >
-          <img class="img-responsive center-block" src="gorajesh.github.io/images/9.jpg"  alt="">
-          <div class="container">
-            <div class="carousel-caption" id="c0">
-              <h2>Learners Hub</h2>
-              <p>Welcome to the learners hub family</p>
-              <a class="btn btn-large btn-primary" href="#" id=b1>Start Learning</a>
-            </div>
-          </div>
-        </div>
-    
-      <div class="item">
-      <img class="img-responsive center-block" src="gorajesh.github.io/images/11.jpg">
-      <div class="container" >
-            <div class="carousel-caption" id="c1">
-              <h2>Get Set Aptitude</h2>
-              <hp>Prepare Aptitude of different languages</p>
-              <a class="btn btn-large btn-primary" href="#" id=b1>Start Learning</a>
-            </div>
-          </div>
-        
-      </div>
-     
-      <div class="item">
-      <img class="img-responsive center-block" src="gorajesh.github.io/images/7.jpg">
-        <div class="container">
-            <div class="carousel-caption" id="c2">
-              <h2>Crack Gate-2018</h2>
-              <p>Prepare yourself for the big Gate-2018</p>
-              <a class="btn btn-large btn-primary" href="#" id=b1>Start Learning</a>
-            </div>
-          </div>
-        
-      </div>
-    
-
-    </div>
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-<div id="sli"></div>
-
-<!--end of slider-->
-  <div class="jumbotron text-center">
-   <h2 id=le><b>Learners Hub<b></h2> 
-<br>
- <button class="btn btn-lg " id=la target="services">Start Learning</button>
-
- <img src="D:\rajarameshsir\images\hi2.jpg" class="img-responsive center-block"  id=lo style="height:385px">
-
- <hr>
-</div>
 </body>
- </html>
+</html>
